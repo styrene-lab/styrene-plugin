@@ -9,7 +9,7 @@
     {
       "name": "styrene-tools",
       "description": "Mesh network tools, fleet operations, and development conventions",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "author": {
         "name": "styrene-lab"
       },
