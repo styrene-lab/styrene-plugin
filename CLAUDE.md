@@ -1,4 +1,4 @@
-# styrene-plugin
+# styrene-agent
 
 Claude Code plugin providing skills, agents, commands, and statusline for styrene mesh network development.
 

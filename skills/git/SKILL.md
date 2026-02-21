@@ -110,7 +110,7 @@ During `0.x.y` development (most styrene-lab repos):
 |------|----------------|
 | styrened | `src/styrened/__init__.py` (`__version__`), synced to `pyproject.toml` |
 | cleave | `pyproject.toml` `[project] version` |
-| styrene-plugin | `.claude-plugin/plugin.json` + `marketplace.json` |
+| styrene-agent | `.claude-plugin/plugin.json` + `marketplace.json` |
 | Rust crates | `Cargo.toml` `[package] version` |
 
 ### Version Bump Commits
