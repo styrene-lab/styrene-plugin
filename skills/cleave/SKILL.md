@@ -209,10 +209,12 @@ Children spawned by `cleave run` and `cleave architect` are capability-stripped:
 | `--max-depth` | 3 | Max recursion depth (1-10) |
 | `--circuit-breaker` | 3 | Consecutive failures before halt |
 | `--max-parallel` | 4 | Max parallel children |
+| `--mcp-config` | "" | MCP config JSON or path for children (empty = no MCP) |
 | `--dry-run` | false | Plan only, don't dispatch |
 | `--confirm` | false | Stop after planning for review |
 | `--resume` | -- | Resume from workspace path |
 | `--dirty` | false | Allow dirty working tree |
+| `--verbose` | false | Debug logging |
 
 ### `cleave architect` flags
 
@@ -227,8 +229,15 @@ Children spawned by `cleave run` and `cleave architect` are capability-stripped:
 | `--max-budget` | 200 | Total budget in USD |
 | `--phase-budget` | 50 | Per-phase budget in USD |
 | `--child-budget` | 15 | Per-child budget within orchestrator |
+| `--timeout` | 24h | Total timeout |
+| `--phase-timeout` | 8h | Per-phase timeout |
 | `--planner-model` | opus | Model for architect planning |
 | `--model` | opus | Model for child execution |
+| `--executor-planner-model` | sonnet | Model for orchestrator split planning |
 | `--max-phases` | 10 | Maximum number of phases |
+| `--max-depth` | 3 | Max cleave recursion within each phase |
+| `--circuit-breaker` | 2 | Consecutive phase failures before halt |
+| `--max-parallel` | 4 | Max parallel children within orchestrator |
 | `--confirm` | false | Pause after planning for review |
 | `--dirty` | false | Allow dirty working tree |
+| `--verbose` | false | Debug logging |
